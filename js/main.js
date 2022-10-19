@@ -139,7 +139,7 @@ const MAIN = {
         return x
     },
     rangeCut: _=>50+upgEffect('grass',4,0)+upgEffect('perk',4,0),
-    autoCut: _=>5-upgEffect('auto',0,0)-upgEffect('plat',0,0)-starTreeEff('progress',3,0),
+    autoCut: _=>0.0001,
     level: {
         req(i) {
             i = E(i).scale(player.decel?300:700,2,0).scale(tmp.level.scale1,2,0)
