@@ -345,7 +345,7 @@ const UPGS = {
                 bulk: i => i.div(1e3).max(1).log(10).floor().toNumber()+1,
             
                 effect(i) {
-                    let x = 0.001
+                    let x = Math.max(i-1,0)
             
                     return x
                 },
